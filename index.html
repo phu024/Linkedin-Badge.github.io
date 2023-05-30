@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Linkedin Badge </title>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <style media="screen">
+      body {
+        background-image: linear-gradient(to bottom, #e6f1f7, #c2dfee);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        animation: gradientAnimation 10s ease infinite;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .badge-base {
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 20px;
+      }
+
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 0%;
+        }
+        50% {
+          background-position: 100% 100%;
+        }
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="phuwadon-dec" data-version="v1">
+      </div>
+    </div>
+  </body>
+</html>
